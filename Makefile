@@ -1,5 +1,5 @@
 .PHONY: godev
-build: 
+build:
 	pnpm run build
 	go build
 
@@ -15,6 +15,7 @@ frontdev:
 install: grafisearch
 	./grafisearch install
 
-grafisearch: 
+.PHONY: grafisearch
+grafisearch:
 	pnpm run build
 	go build

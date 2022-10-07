@@ -69,7 +69,7 @@ func main() {
 	http.HandleFunc("/stats", serveStats)
 
 	// Start the server
-	fmt.Println("Listening on http://localhost:8042")
+	fmt.Println("Listening on http://:8042")
 	log.Fatal(http.ListenAndServe(":8042", nil))
 }
 
